@@ -34,3 +34,13 @@ LIRI is a Language Interpretation and Recognition Interface. LIRI will be a comm
   * Plot of the movie
   * Actors in the movie
 
+### Example Images
+
+### Spotify This
+<img src="images/spotify-this-song.jpg">
+### Movie This
+<img src="images/movie-this.jpg">
+### Concert This
+<img src="images/concert-this.jpg">
+### Do What It Says
+<img src="images/do-what-it-says.jpg">
