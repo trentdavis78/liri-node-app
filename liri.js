@@ -194,8 +194,7 @@ function movieThis() {
     });
 }
 function doWhatItSays() {
-  //Take the contents of the file "random.txt" and use the contents
-  //to perform the command listed in the document.
+  //Take the contents of the file "random.txt" and use the contents to perform the command listed in the document.
   logText = "<" + myCmd + ">\n";
   //log file here to capture command.
   fs.appendFile("log.txt", logText, function(err) {
@@ -208,10 +207,9 @@ function doWhatItSays() {
       return console.log(error);
     }
 
-    // Then split it by commas (to make it more readable)
+    // Then split it by commas 
     var dataArr = data.split(",");
     //Set variables to contents of file
-
     myCmd = dataArr[0];
     arg2 = dataArr[1];
     runMain();
@@ -220,14 +218,12 @@ function doWhatItSays() {
 
 function processError(error) {
   if (error.response) {
-    // The request was made and the server responded with a status code
-    // that falls out of the range of 2xx
+    // The request was made and the server responded with a status code that falls out of the range of 2xx
     console.log(error.response.data);
     console.log(error.response.status);
     console.log(error.response.headers);
   } else if (error.request) {
-    // The request was made but no response was received
-    // `error.request` is an object that comes back with details pertaining to the error that occurred.
+    // Log error
     console.log(error.request);
   } else {
     // Something happened in setting up the request that triggered an Error
